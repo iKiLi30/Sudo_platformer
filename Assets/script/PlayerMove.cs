@@ -18,5 +18,4 @@ public class PlayerMove : MonoBehaviour
         _playerRigidbody.velocity = new Vector2(_horizontalStep, _playerRigidbody.velocity.y);
         
     }
-
 }
