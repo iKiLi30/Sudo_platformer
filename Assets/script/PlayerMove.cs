@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _playerRigidbody;
     [Header("Параметры")]
-    [SerializeField] private float _horizontalStep;
+    [SerializeField] private float _horizontalStep = 500;
 
     private void Start()
     {   
@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _playerRigidbody.velocity = new Vector2(_horizontalStep, _playerRigidbody.velocity.y);
-        
+        _playerRigidbody.velocity = new Vector2(_horizontalStep * Time.deltaTime, _playerRigidbody.velocity.y);
+         
     }
 }
