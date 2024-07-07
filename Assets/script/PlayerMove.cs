@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMove : MonoBehaviour
 
-{   private const float _stepRatio = 50f;
+{   
+    private const float _stepRatio = 50f;
     private const string horizontalAxis = "Horizontal";
 
     [SerializeField] private Rigidbody2D _playerRigidbody;
